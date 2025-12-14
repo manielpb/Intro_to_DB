@@ -15,7 +15,7 @@ except Exception as e:
 
 try:
     mycursor = db.cursor()
-    mycursor.execute("CREATE DATABASE alx_book_store IF NOT EXISTS")
+    mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
     print("Database 'alx_book_store' created successfully!")
 except Exception as e:
     print("Database 'alx_book_store' failed ")
